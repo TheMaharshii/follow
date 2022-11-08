@@ -1,0 +1,29 @@
+
+
+
+header {
+   @include gradientBackground(135deg);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  border-bottom:4px solid rgba($white-color,0.2 );
+  .container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    gap: 8%;
+    align-items: center;
+    .header_content {
+      h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        letter-spacing: -3px;
+      }
+      p{
+        margin:1rem 0 2rem;
+        font-size: 1.1rem;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+
+.services {
+    margin-bottom: 4rem;
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    article {
+      @include gradientBackground(190deg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      display: flex;
+      gap: 1.5rem;
+      transition: all 400ms ease;
+      margin-bottom: 2rem;
+      &:hover {
+        margin-top: -0.5rem;
+      }
+    }
+  }
+}

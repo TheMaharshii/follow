@@ -1,0 +1,33 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+     @include gradientBackground(-115deg);
+     box-shadow: 0 1.1rem 1rem rgba($black-color, 0.4);
+    .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+        button {
+        display: none;
+        }
+        a {
+         color: rgba($white-color,0.9);
+        font-weight: 500;
+        font-size: 1.17rem;
+        transition: 0.4s ease;
+
+        &:hover:not(.btn){
+             color: $primary-color-variant;
+        }
+        }
+    }
+}

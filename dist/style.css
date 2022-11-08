@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: azure;
+}
+
+.loader > span {
+  display: inline-block;
+  background-color: purple;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  margin: 0 8px;
+  transform: translate3d(0);
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader > span:nth-child(2) {
+  background-color: palevioletred;
+  animation-delay: 0.2s;
+}
+
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  to {
+    width: 16px;
+    height: 16px;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(-70deg, #480ca8, #4cc9f0);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: rgba(12, 3, 27, 0.7);
+}
+
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h2 {
+  background-color: #ffffff;
+  width: fit-content;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 10rem;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+}
+section > h2 {
+  text-align: center;
+}
+section > P {
+  text-align: center;
+  width: 45%;
+  margin: 0.6rem auto 2.5rem;
+}
+
+p,
+small {
+  font-weight: 520;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  background: #f72585;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.btn:hover {
+  background: #f956a1;
+  transform: translateY(1.45px);
+  box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.75);
+}
+
+.btn-primary {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  background: #480ca8;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.btn-primary:hover {
+  background: #5c0fd8;
+  transform: translateY(1.45px);
+  box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.75);
+}
+
+header {
+  background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  color: #ffffff;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+}
+header .container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 46% 46%;
+  gap: 8%;
+  align-items: center;
+}
+header .container .header_content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: -3px;
+}
+header .container .header_content p {
+  margin: 1rem 0 2rem;
+  font-size: 1.1rem;
+}
+
+nav {
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(-115deg, #480ca8, #4cc9f0);
+  color: #ffffff;
+  box-shadow: 0 1.1rem 1rem rgba(12, 3, 27, 0.4);
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+nav .container button {
+  display: none;
+}
+nav .container a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 1.17rem;
+  transition: 0.4s ease;
+}
+nav .container a:hover:not(.btn) {
+  color: #4cc9f0;
+}
+
+.services {
+  margin-bottom: 4rem;
+}
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.services_container article {
+  background: linear-gradient(190deg, #480ca8, #4cc9f0);
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 400ms ease;
+  margin-bottom: 2rem;
+}
+.services_container article:hover {
+  margin-top: -0.5rem;
+}
+
+#specialists .container {
+  width: 68%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+#specialists .container article {
+  background: Swhite-color;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 1.5rem rgba Sblack-color, 0.1;
+  position: relative;
+  transition: all 700ms ease;
+}
+#specialists .container article:hover {
+  box-shadow: none;
+}
+#specialists .container article:hover .specialist_image::before {
+  left: 0;
+  border-radius: 1rem;
+}
+#specialists .container article:hover .specialist_socials,
+#specialists .container article:hover .specialist_whatsapp {
+  visibility: visible;
+  opacity: 1;
+}
+#specialists .container article .specialist_image {
+  height: 20rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#specialists .container article .specialist_image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(135deg, rgba(72, 12, 168, 0.8), rgba(76, 201, 240, 0.8));
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+#specialists .container article .specialist_details {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+#specialists .container article .specialist_socials {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s 400ms ease;
+}
+#specialists .container article .specialist_socials a {
+  background: #ffffff;
+  color: #480ca8;
+  padding: 0.4rem;
+  display: flex;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  transition: all 400ms ease;
+}
+#specialists .container article .specialist_socials a:hover {
+  background: #480ca8;
+  color: #ffffff;
+}
+#specialists .container article .specialist_whatsapp {
+  background: #54eb72;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30%;
+  padding: 0.6rem;
+  border-radius: 50%;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s 400ms ease;
+}
+
+#appointment {
+  margin-bottom: 6rem;
+  border: none;
+}
+#appointment .container {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+}
+#appointment .container .info p {
+  margin: 1.5rem 0.2rem;
+}
+#appointment .container .info article {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appointment .container .info article small {
+  margin-top: 0.4rem;
+  display: block;
+}
+#appointment .container .info article .info_icon {
+  background: #f72585;
+  color: #ffffff;
+  padding: 0.8rem;
+  height: fit-content;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.2rem;
+}
+#appointment .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+#appointment .container form .form_group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appointment .container form .form_group input, #appointment .container form .form_group textarea, #appointment .container form .form_group select {
+  background: #ffffff;
+  padding: 0.85rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  resize: none;
+  appearance: none;
+}
+
+footer {
+  background-color: #0c031b;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 6rem;
+}
+footer * {
+  width: fit-content;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  font-size: 1.1rem;
+}
+footer .container a {
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 400ms ease;
+}
+footer .container a:hover {
+  color: #ffffff;
+}
+footer .container article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .container article > div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+footer .container article > h3 {
+  color: #ffffff;
+}
+footer .container article .footer_socials {
+  gap: 1rem;
+  font-size: 1.15rem;
+}
+footer .copyright {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  width: 100%;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */
