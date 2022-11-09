@@ -134,6 +134,9 @@ nav .container ul {
   gap: 3rem;
   align-items: center;
 }
+nav .container button {
+  display: none;
+}
 nav .container a {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
