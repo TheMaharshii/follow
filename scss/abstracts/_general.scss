@@ -69,6 +69,10 @@ small {
 }
 
 @media screen and (max-width: 1010px) {
+
+  html{
+    font-size: 14px;
+  }
   .container {
     width: $container-md;
     margin: 0 auto;

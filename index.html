@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Website</title>
+    <title>MJXYZ</title>
     <link rel="stylesheet" href="dist/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
@@ -22,7 +22,6 @@
           <li><a href="#"> HOME </a></li>
           <li><a href="#services"> Services </a></li>
           <li><a href="#specialists"> Specialists </a></li>
-          <li><a href="#testimonials"> Testimonials </a></li>
           <li><a href="#appointment" class="btn"> Make Appointment </a></li>
         </ul>
         <button id="open_nav-btn"><i class="bx bx-menu"></i></button>
@@ -434,6 +433,25 @@
       </div>
     </footer> 
 
-   
+   <script>
+    const navItems= document.querySelector
+('#nav_items');
+const openNavBtn = document.querySelector
+('#open_nav-btn');
+const closeNavBtn = document.querySelector
+('#close_nav-btn');
+openNavBtn.addEventListener('click', () => {
+navItems.style.display = 'flex';
+openNavBtn.style.display='none';
+closeNavBtn.style.display='inline-block';
+});
+const closeNav = () =>{
+  navItems.style.display = 'none';
+openNavBtn.style.display='inline-block';
+closeNavBtn.style.display='none';
+}
+closeNavBtn.addEventListener('click',closeNav)
+
+   </script>
   </body>
 </html>

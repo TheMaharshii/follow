@@ -1,40 +1,105 @@
 nav {
-    width: 100vw;
-    height: 5rem;
-    position: fixed;
-    z-index: 10;
-    display: grid;
-    place-items: center;
-     @include gradientBackground(-115deg);
-     box-shadow: 0 1.1rem 1rem rgba($black-color, 0.4);
-    .container{
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  @include gradientBackground(-115deg);
+  box-shadow: 0 1.1rem 1rem rgba($black-color, 0.4);
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     ul {
-        display: flex;
-        gap: 3rem;
-        align-items: center;
+      display: flex;
+      gap: 3rem;
+      align-items: center;
     }
-        button {
-        display: none;
-        }
-        a {
-         color: rgba($white-color,0.9);
-        font-weight: 500;
-        font-size: 1.17rem;
-        transition: 0.4s ease;
+    button {
+      // display: none;
+    }
+    a {
+      color: rgba($white-color, 0.9);
+      font-weight: 500;
+      font-size: 1.17rem;
+      transition: 0.4s ease;
 
-        &:hover:not(.btn){
-             color: $primary-color-variant;
-        }
-        }
+      &:hover:not(.btn) {
+        color: $primary-color-variant;
+      }
     }
+  }
 }
 
+@media screen and (max-width: 1010px) {
+  nav {
+    .container {
+      button {
+        display: inline-block;
+        background: transparent;
+        color: $white-color;
+        font-size: 2rem;
+        cursor: pointer;
 
-@media screen and (max-width:1010px){
-    nav{
+        &#close_nav-btn {
+          display: none;
+        }
+      }
+      ul {
+        position: fixed;
+        right:0 ;
+        top: 5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
         display: none;
+        perspective: 300px;
+
+        li {
+          width: 100%;
+          opacity: 0;
+          animation: flipNavItem 300ms ease forwards;
+          transform-origin: top;
+
+          &:nth-child(2) {
+            animation-delay: 200ms;
+          }
+          &:nth-child(3) {
+            animation-delay: 400ms;
+          }
+          &:nth-child(4) {
+            animation-delay: 600ms;
+          }
+        
+
+        @keyframes flipNavItem {
+          0% {
+            transform: rotateX(90deg);
+          }
+          100% {
+            transform: rotateX(0deg);
+            opacity: 1;
+          }
+        }
+          a {
+            
+            color: $white-color;
+            height: 100%;
+            display: block;
+            padding: 1.5rem 2rem;
+            border-radius: 0;
+            background-image: linear-gradient(
+                $primary-color-variant,
+                darken($primary-color-variant,17%)
+            );
+
+            &.btn {
+              background: $secondary-color;
+            }
+          }
+        }
+      }
     }
+  }
 }
