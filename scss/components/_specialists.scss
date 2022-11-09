@@ -92,3 +92,13 @@
     }
   }
 }
+
+
+@media screen and (max-width:1140px){
+  #specialists{
+    
+    .container{
+      grid-template-columns: 1fr ;
+    }
+  }
+}

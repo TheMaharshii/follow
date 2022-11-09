@@ -27,3 +27,15 @@ header {
     }
   }
 }
+
+
+@media screen and (max-width:1140px) {
+  header{
+    border: none;
+    .container{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

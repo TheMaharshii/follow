@@ -14,8 +14,22 @@
       transition: all 400ms ease;
       margin-bottom: 2rem;
       &:hover {
-        margin-top: -0.5rem;
+        transform: translateY(-10px);
       }
+    }
+  }
+}
+
+
+@media screen and (max-width:1140px){
+  .services{
+   
+    &_container{
+      grid-template-columns: 1fr ;
+      // padding: 0.3rem;
+      // width: fit-content;
+      width: auto;
+      padding: 0;
     }
   }
 }

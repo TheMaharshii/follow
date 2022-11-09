@@ -54,3 +54,19 @@ footer{
 }
 
 
+@media screen and (max-width:1140px){
+    footer{
+        
+        .container{
+            grid-template-columns: 1fr;
+           
+            article{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 0 auto ;
+            }
+        }
+    }
+}

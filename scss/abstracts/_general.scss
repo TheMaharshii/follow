@@ -24,8 +24,9 @@ body {
 }
 
 img {
-  display: block;
-  width: 100%;
+  // display: block;
+  max-width: 100%;
+  height: auto;
 }
 h1,
 h2,
@@ -34,7 +35,6 @@ h4,
 h5 {
   line-height: 1.2;
 }
-
 
 h2 {
   background-color: $white-color;
@@ -45,7 +45,7 @@ h2 {
 
 section {
   margin-top: 10rem;
-  border-bottom:4px solid rgba($white-color,0.2 );
+  border-bottom: 4px solid rgba($white-color, 0.2);
   & > h2 {
     text-align: center;
   }
@@ -68,3 +68,18 @@ small {
   @include button($white-color, $primary-color);
 }
 
+@media screen and (max-width: 1140px) {
+  .container {
+    width: $container-md;
+    margin: 0 auto;
+  }
+  
+  
+  section {
+    margin-top: 3rem;
+    border: none;
+    & p {
+      width: 100%;
+    }
+  }
+}
