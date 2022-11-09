@@ -357,6 +357,9 @@ header .container .header_content p {
 }
 
 @media screen and (max-width: 1140px) {
+  #appointment p {
+    text-align: center;
+  }
   #appointment .container {
     grid-template-columns: 1fr;
   }

@@ -64,8 +64,12 @@
 
 @media screen and (max-width: 1140px) {
   #appointment {
+    p{
+      text-align: center;
+    }
     .container {
       grid-template-columns: 1fr;
+      
       
       .btn-primary{
         margin: 0 auto;
