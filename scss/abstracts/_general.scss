@@ -68,7 +68,7 @@ small {
   @include button($white-color, $primary-color);
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1010px) {
   .container {
     width: $container-md;
     margin: 0 auto;

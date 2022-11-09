@@ -94,11 +94,12 @@
 }
 
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1010px){
   #specialists{
-    
+    margin: 0 auto;
     .container{
       grid-template-columns: 1fr ;
+      
     }
   }
 }

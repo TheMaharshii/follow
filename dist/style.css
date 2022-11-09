@@ -97,7 +97,7 @@ small {
   box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.75);
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1010px) {
   .container {
     width: 90%;
     margin: 0 auto;
@@ -144,7 +144,7 @@ nav .container a:hover:not(.btn) {
   color: #4cc9f0;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1010px) {
   nav {
     display: none;
   }
@@ -174,7 +174,7 @@ header .container .header_content p {
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1010px) {
   header {
     border: none;
   }
@@ -206,7 +206,7 @@ header .container .header_content p {
   transform: translateY(-10px);
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1010px) {
   .services_container {
     grid-template-columns: 1fr;
     width: auto;
@@ -298,7 +298,10 @@ header .container .header_content p {
   transition: all 1s 400ms ease;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1010px) {
+  #specialists {
+    margin: 0 auto;
+  }
   #specialists .container {
     grid-template-columns: 1fr;
   }
@@ -356,7 +359,7 @@ header .container .header_content p {
   appearance: none;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1010px) {
   #appointment p {
     text-align: center;
   }
@@ -413,7 +416,7 @@ footer .copyright {
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1010px) {
   footer .container {
     grid-template-columns: 1fr;
   }
