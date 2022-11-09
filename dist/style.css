@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: linear-gradient(-80deg, #4cc9f0, #5c0fd8);
+  background: linear-gradient(0deg, #4cc9f0, #5c0fd8);
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   color: rgba(12, 3, 27, 0.7);
