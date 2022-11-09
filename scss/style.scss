@@ -12,16 +12,3 @@
 @import "./components/footer";
 
 
-
-$colors:(
-  "white":"$white-color",
-  "color-2":"$secondary-color"
-);
-
-@each $name, $color in $colors {
-  .color-#{$name} {
-    height: 16px;
-    width: 16px;
-    color: $color;
-  }
-}

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 
-    
+
 $primary-color: #480ca8 !default;
 $primary-color-variant: #4cc9f0 !default;
 $secondary-color: #f72585 !default !default;
@@ -14,4 +14,13 @@ $container-lg: 82% !default;
 $container-md: 90% !default;
 $normal-font-size:1.1rem !default;
 $heading-font-size:2rem !default;
-$font-face:"Montserrat", sans-serif !default;
+$font-family-1:"Montserrat", sans-serif !default;
+$breakpoints-up: (
+    "x-small":320px,  
+    "small":540px,
+  "medium": 940px,
+  "large":1240px
+);
+
+
+

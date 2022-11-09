@@ -7,7 +7,7 @@
     grid-template-columns: 47% 47%;
     gap: 6%;
 
-    .info {
+    .appointment_info {
       p {
         margin: 1.5rem 0.2rem;
       }
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 1010px) {
+@include breakpoint(medium) {
   #appointment {
     p{
       text-align: center;

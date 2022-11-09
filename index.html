@@ -10,10 +10,8 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-   
   </head>
 
- 
   <body>
     <nav>
       <div class="nav_container container">
@@ -47,7 +45,7 @@
       </div>
     </header>
 
-     <section id="services" class="services">
+    <section id="services" class="services">
       <h2>Our Services</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
@@ -121,9 +119,9 @@
           </div>
         </article>
       </div>
-    </section> 
+    </section>
 
-     <section id="specialists">
+    <section id="specialists">
       <h2>Our Top Specialists</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
@@ -263,11 +261,11 @@
           ></a>
         </article>
       </div>
-    </section> 
+    </section>
 
-     <section id="appointment">
-      <div class="container">
-        <div class="info">
+    <section id="appointment">
+      <div class="appointment-container container">
+        <div class="appointment_info">
           <h2>Get an appointmnet</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
@@ -317,7 +315,7 @@
           </article>
         </div>
 
-        <form>
+        <form action="https://formspree.io/f/mpznkjpn" method="post">
           <div class="form_group">
             <label for="name">Name:</label>
             <input
@@ -378,10 +376,10 @@
           <input type="submit" value="Submit Request" class="btn-primary" />
         </form>
       </div>
-    </section> 
+    </section>
 
-     <footer>
-      <div class="container">
+    <footer>
+      <div class="footer_container container">
         <article>
           <a href="#" class="footer_logo"><h3>LOGO</h3></a>
           <p>
@@ -431,27 +429,23 @@
       <div class="copyright">
         <small>&copy; Copyright XYZ. All Rights Reserved </small>
       </div>
-    </footer> 
+    </footer>
 
-   <script>
-    const navItems= document.querySelector
-('#nav_items');
-const openNavBtn = document.querySelector
-('#open_nav-btn');
-const closeNavBtn = document.querySelector
-('#close_nav-btn');
-openNavBtn.addEventListener('click', () => {
-navItems.style.display = 'flex';
-openNavBtn.style.display='none';
-closeNavBtn.style.display='inline-block';
-});
-const closeNav = () =>{
-  navItems.style.display = 'none';
-openNavBtn.style.display='inline-block';
-closeNavBtn.style.display='none';
-}
-closeNavBtn.addEventListener('click',closeNav)
-
-   </script>
+    <script>
+      const navItems = document.querySelector("#nav_items");
+      const openNavBtn = document.querySelector("#open_nav-btn");
+      const closeNavBtn = document.querySelector("#close_nav-btn");
+      openNavBtn.addEventListener("click", () => {
+        navItems.style.display = "flex";
+        openNavBtn.style.display = "none";
+        closeNavBtn.style.display = "inline-block";
+      });
+      const closeNav = () => {
+        navItems.style.display = "none";
+        openNavBtn.style.display = "inline-block";
+        closeNavBtn.style.display = "none";
+      };
+      closeNavBtn.addEventListener("click", closeNav);
+    </script>
   </body>
 </html>

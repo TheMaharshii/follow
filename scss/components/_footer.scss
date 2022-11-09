@@ -54,7 +54,7 @@ footer{
 }
 
 
-@media screen and (max-width:1010px){
+@include breakpoint(medium){
     footer{
         
         .container{

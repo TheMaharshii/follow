@@ -22,5 +22,10 @@
 }
 
 
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoints-up,$size)) {
+    @content;
+  }
+}
 
 

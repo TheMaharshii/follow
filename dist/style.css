@@ -15,8 +15,7 @@ html {
 }
 
 body {
-  background: linear-gradient(-70deg, #480ca8, #4cc9f0);
-  color: #ffffff;
+  background: linear-gradient(-80deg, #4cc9f0, #5c0fd8);
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   color: rgba(12, 3, 27, 0.7);
@@ -41,28 +40,22 @@ h5 {
   font-size: 2rem;
 }
 
-p {
-  font-size: 1.1rem;
-}
-
-h2 {
-  background-color: #ffffff;
-  width: fit-content;
-  border-radius: 5px;
-  margin: 0 auto;
-}
-
 section {
   margin-top: 10rem;
   border-bottom: 4px solid rgba(255, 255, 255, 0.2);
 }
 section > h2 {
   text-align: center;
+  background-color: #ffffff;
+  width: fit-content;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 section > P {
   text-align: center;
   width: 45%;
   margin: 0.6rem auto 2.5rem;
+  font-size: 1.1rem;
 }
 
 p,
@@ -102,7 +95,7 @@ small {
   box-shadow: 0 1rem 1.6rem rgba(12, 3, 27, 0.75);
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 940px) {
   html {
     font-size: 14px;
   }
@@ -116,6 +109,16 @@ small {
   }
   section p {
     width: 100%;
+  }
+}
+@media (max-width: 1240px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 12px;
   }
 }
 nav {
@@ -141,7 +144,6 @@ nav .container ul {
 }
 nav .container button {
   display: none;
-  display: none;
 }
 nav .container a {
   color: rgba(255, 255, 255, 0.9);
@@ -153,7 +155,7 @@ nav .container a:hover:not(.btn) {
   color: #4cc9f0;
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 940px) {
   nav .container button {
     display: inline-block;
     background: transparent;
@@ -234,7 +236,7 @@ header .container .header_content p {
   margin: 1rem 0 2rem;
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 940px) {
   header {
     border: none;
   }
@@ -266,7 +268,7 @@ header .container .header_content p {
   transform: translateY(-10px);
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 940px) {
   .services_container {
     grid-template-columns: 1fr;
     width: auto;
@@ -358,7 +360,7 @@ header .container .header_content p {
   transition: all 1s 400ms ease;
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 940px) {
   #specialists {
     margin: 0 auto;
   }
@@ -375,19 +377,19 @@ header .container .header_content p {
   grid-template-columns: 47% 47%;
   gap: 6%;
 }
-#appointment .container .info p {
+#appointment .container .appointment_info p {
   margin: 1.5rem 0.2rem;
 }
-#appointment .container .info article {
+#appointment .container .appointment_info article {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
 }
-#appointment .container .info article small {
+#appointment .container .appointment_info article small {
   margin-top: 0.4rem;
   display: block;
 }
-#appointment .container .info article .info_icon {
+#appointment .container .appointment_info article .info_icon {
   background: #f72585;
   color: #ffffff;
   padding: 0.8rem;
@@ -419,7 +421,7 @@ header .container .header_content p {
   appearance: none;
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 940px) {
   #appointment p {
     text-align: center;
   }
@@ -476,7 +478,7 @@ footer .copyright {
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 940px) {
   footer .container {
     grid-template-columns: 1fr;
   }
@@ -487,17 +489,6 @@ footer .copyright {
     text-align: center;
     margin: 0 auto;
   }
-}
-.color-white {
-  height: 16px;
-  width: 16px;
-  color: "$white-color";
-}
-
-.color-color-2 {
-  height: 16px;
-  width: 16px;
-  color: "$secondary-color";
 }
 
 /*# sourceMappingURL=style.css.map */
