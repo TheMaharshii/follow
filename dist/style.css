@@ -38,6 +38,11 @@ h3,
 h4,
 h5 {
   line-height: 1.2;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 h2 {
@@ -136,6 +141,7 @@ nav .container ul {
 }
 nav .container button {
   display: none;
+  display: none;
 }
 nav .container a {
   color: rgba(255, 255, 255, 0.9);
@@ -226,7 +232,6 @@ header .container .header_content h1 {
 }
 header .container .header_content p {
   margin: 1rem 0 2rem;
-  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 1010px) {

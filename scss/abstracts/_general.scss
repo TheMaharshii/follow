@@ -13,7 +13,7 @@ html {
 }
 body {
   @include gradientBackground(-70deg);
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-face;
   line-height: 1.5;
   color: $dark-color;
 }
@@ -34,6 +34,11 @@ h3,
 h4,
 h5 {
   line-height: 1.2;
+  font-size: $heading-font-size;
+}
+
+p{
+  font-size: $normal-font-size;
 }
 
 h2 {
